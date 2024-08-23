@@ -16,7 +16,7 @@
 
     <!-- Form to enter new data for predictions -->
     <form action="{{ url_for('predict')}}" method="POST">
-      <div class="form-container">
+      <!-- <div class="form-container">
         <input type="text" name="cap-shape" placeholder="Cap Shape" required="required" /><br>
         <input type="text" name="cap-surface" placeholder="Cap Surface" required="required" /><br>
         <input type="text" name="cap-color" placeholder="Cap Color" required="required" /><br>
@@ -39,6 +39,17 @@
         <input type="text" name="spore-print-color" placeholder="Spore Print Color" required="required" /><br>
         <input type="text" name="population" placeholder="Population" required="required" /><br>
         <input type="text" name="habitat" placeholder="Habitat" required="required" /><br>
+      </div> -->
+      <div class="form-container">
+        <input type="text" name="odor" placeholder="Odor" required="required" /><br>
+        <input type="text" name="gill-size" placeholder="Gill Size" required="required" /><br>
+        <input type="text" name="gill-color" placeholder="Gill Color" required="required" /><br>
+        <input type="text" name="cap-color" placeholder="Cap Color" required="required" /><br>
+        <input type="text" name="bruises" placeholder="Bruises" required="required" /><br>
+        <input type="text" name="spore-print-color" placeholder="Spore Print Color" required="required" /><br>
+        <input type="text" name="gill-spacing" placeholder="Gill Spacing" required="required" /><br>
+        <input type="text" name="ring-type" placeholder="Ring Type" required="required" /><br>
+        <input type="text" name="stalk-surface-above-ring" placeholder="Stalk Surface Above Ring" required="required" /><br>
       </div>
 
       <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
